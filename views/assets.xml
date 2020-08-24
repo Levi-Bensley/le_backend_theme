@@ -8,9 +8,9 @@
 				<!-- <script type="application/javascript" src="/backend_theme_v12/static/src/js/sidebar.js"/> -->
 				<!-- <script type="application/javascript" src="/backend_theme_v12/static/src/js/sidebar-toggle.js"/> -->
 			</xpath>
-            <xpath expr="//script[@src='/web/static/src/js/views/list/list_renderer.js']" position="after">
+            <!-- <xpath expr="//script[@src='/web/static/src/js/views/list/list_renderer.js']" position="after">
                 <script type="text/javascript" src="/le_backend_theme/static/src/js/list_renderer.js"/>
-            </xpath>
+            </xpath> -->
 		</template>
     </data>
 </odoo>
