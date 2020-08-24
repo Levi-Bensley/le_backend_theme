@@ -1,15 +1,15 @@
 @font-face {
     font-family: Roboto;
-    src: url(/backend_theme_v12/static/src/font/Roboto-Regular.ttf)
+    src: url(/le_backend_theme/static/src/font/Roboto-Regular.ttf)
 }
 
-$wr-primary:        #0b2e59;
-$wr-primary-dark:   #006997;
+$wr-primary:        #0B2E59;
+$wr-primary-dark:   #3F71AB;
 $wr-secondary:      #FEBA00;
 $wr-secondary-dark: rgb(207, 157, 17);
-$wr-gradient:       #C33764;
-$wr-gradient-muted: rgb(228, 76, 124);
-$wr-gradient-dark:  #9e3154;
+$wr-gradient:       #3F71AB;
+$wr-gradient-muted: #6999d1;
+$wr-gradient-dark:  #305886;
 
 body {
     font-family: "Roboto";
@@ -99,12 +99,12 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(254, 186, 0, 0.5);
 }
 
-.dropdown-item.active .o-app-name, .dropdown-item:active .o-app-name {
-    color: $wr-primary;
+.dropdown-item.active.o_app, .dropdown-item:active.o_app {
+    color: white;
 }
 
-.dropdown-item:hover .o-app-name, .dropdown-item:focus .o-app-name {
-    color: $wr-primary;
+.dropdown-item:hover.o_app .o-app-name, .dropdown-item:focus.o_app .o-app-name {
+    color: $wr-secondary;
 }
 
 .o_menu_apps .dropdown-menu.show {
