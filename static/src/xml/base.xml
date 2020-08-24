@@ -1,7 +1,7 @@
 <t t-name="Throbber_WR">
     <div>
         <div class="oe_blockui_spin" style="height: 50px">
-            <img src="/wr_backend_theme/static/src/img/loading.gif" alt="Loading..."/>
+            <img src="/le_backend_theme/static/src/img/loading.gif" alt="Loading..."/>
         </div>
         <br />
         <div class="oe_throbber_message" style="color:white"></div>

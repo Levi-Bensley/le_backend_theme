@@ -1,4 +1,4 @@
-odoo.define('wr_backend_theme.ListRenderer', function(require) {
+odoo.define('le_backend_theme.ListRenderer', function(require) {
     "use strict";
 
     var ListRenderer = require('web.ListRenderer');
