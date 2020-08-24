@@ -1,0 +1,312 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/backend_theme_v12/static/src/font/Roboto-Regular.ttf)
+}
+
+$wr-primary:        #0b2e59;
+$wr-primary-dark:   #006997;
+$wr-secondary:      #FEBA00;
+$wr-secondary-dark: rgb(207, 157, 17);
+$wr-gradient:       #C33764;
+$wr-gradient-muted: rgb(228, 76, 124);
+$wr-gradient-dark:  #9e3154;
+
+body {
+    font-family: "Roboto";
+}
+
+.o_loading {
+    background-color: $wr-primary;
+}
+
+.o_main_navbar {
+    background-color : $wr-primary;
+}
+
+.fa-th-large::before {
+    content: "\f192";
+}
+
+.o_menu_apps .full {
+    width: 46px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
+    background-color: $wr-gradient;
+}
+
+.o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
+    background-color: $wr-gradient;
+}
+
+.o_main_navbar .show .dropdown-toggle {
+    background-color: $wr-gradient;
+}
+
+.o_main_navbar {
+    border-bottom: none;
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+    background-color: $wr-secondary;
+}
+
+.search-container .form-control:focus {
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .o_menu_apps .dropdown-menu.show .o_app {
+        width: 32.333333%;
+        border-radius: 10px;
+        margin-right: .5%;
+        margin-left: .5%;
+        margin-top: .5%;
+    }
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon {
+    max-width: 4rem;
+    border-radius: 10px;
+}
+
+.o_user_menu .dropdown-toggle {
+    background: $wr-gradient;
+}
+
+.o-app-name {
+    font-size: 16px;
+    color: white;
+}
+
+.btn-primary {
+    background: $wr-gradient;
+    border-color: $wr-gradient-dark;
+    border-radius: 100px;
+}
+
+.btn-secondary {
+    border-radius: 100px;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(195, 55, 100, 0.5);
+}
+
+.btn-primary:hover:focus, .btn-primary.focus:hover {
+    box-shadow: 0 0 0 0.2rem rgba(254, 186, 0, 0.5);
+}
+
+.dropdown-item.active .o-app-name, .dropdown-item:active .o-app-name {
+    color: $wr-primary;
+}
+
+.dropdown-item:hover .o-app-name, .dropdown-item:focus .o-app-name {
+    color: $wr-primary;
+}
+
+.o_menu_apps .dropdown-menu.show {
+    background: linear-gradient(to bottom, $wr-primary, $wr-gradient);
+    border-radius: 0;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    height: auto;
+}
+@media (min-width: 992px) {
+    .o_menu_apps .dropdown-menu.show {
+        padding-left: 0 !important;
+        padding-right: 0 !important; 
+        width: 50vw !important;
+        min-width: 0% !important;
+        max-width: 615px;
+    }
+    
+}
+
+input[type="search"]{
+    -webkit-appearance: none !important;
+}
+
+.o_view_nocontent .o_nocontent_help .o_view_nocontent_smiling_face:before {
+    background: transparent url(/wr_backend_theme/static/src/img/cust_smiling_face.svg) no-repeat center;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: $wr-secondary;
+    border-color: $wr-secondary-dark;
+}
+
+.btn-primary:hover {
+    background-color: $wr-secondary;
+    border-color: $wr-secondary-dark;
+}
+
+a {
+    color: $wr-gradient;
+}
+
+.o_form_view .oe_button_box .oe_stat_button {
+    border-radius: 10px;
+}
+
+.o_kanban_view .o_kanban_record {
+    border-radius: 10px;
+}
+
+.btn-info {
+    border-radius: 100px !important;
+}
+
+.btn-default {
+    border-radius: 100px !important;
+}
+
+.o_kanban_view .o_kanban_record.o_kanban_record_has_image_fill .o_kanban_image_fill_left {
+    border-radius: 10px 0 0 10px;
+}
+
+.o_form_view .o_form_sheet_bg {
+    background: #cccccc;
+}
+.o_kanban_view .oe_kanban_card .o_dropdown_kanban.show .dropdown-toggle, .o_kanban_view .o_kanban_record .o_dropdown_kanban.show .dropdown-toggle {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.o_base_settings .o_setting_container .settings_tab {
+    background: $wr-primary;
+    padding-top: 0px;
+}
+
+.o_base_settings .o_setting_container .settings_tab .selected {
+    background-color: $wr-gradient;
+    box-shadow: inset 3px 0 0 $wr-secondary;
+}
+
+.title.text-muted {
+    color: #4c4c4c !important;
+}
+
+.o_kanban_view.o_kanban_ungrouped .o_kanban_record {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.o_kanban_view .o_kanban_record:focus, .o_kanban_view .o_kanban_record:focus-within, .o_kanban_view .o_kanban_quick_create:focus, .o_kanban_view .o_kanban_quick_create:focus-within {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn.btn-primary.disabled, .btn-primary:disabled {
+    background-color: $wr-gradient-muted;
+    border-color: $wr-gradient-muted;
+}
+
+button[name="button_immediate_upgrade"], button[name="button_uninstall_cancel"], 
+button[name="button_uninstall_wizard"], button[name="button_immediate_install"], 
+button[name="button_upgrade_cancel"] , button[name="button_install_cancel"] {
+    margin-right: 5px;
+}
+
+.o_content .o_form_view .oe_title span.o_field_widget, .modal-content .o_form_view .oe_title span.o_field_widget {
+    overflow: inherit;
+}
+
+.btn-group, .btn-group-vertical {
+    margin-right: 5px;
+}
+
+.fa.fa-ellipsis-v::before {
+    content: "\f0c9";
+    // Fix this so that it changes the class of the item
+    
+}
+
+.o_form_view .o_form_uri {
+    color: $wr-gradient;
+}
+
+.o_form_view .o_form_uri:hover {
+    color: $wr-gradient-dark;
+}
+
+.o_form_view .o_horizontal_separator {
+    color: $wr-primary;
+}
+
+.o_web_settings_dashboard {
+    background: #cccccc !important;
+}
+
+.o_web_settings_dashboard .o_web_settings_dashboard_col > div {
+    border-radius: 10px !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $wr-gradient;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $wr-gradient-dark; 
+}
+
+.oe_module_icon {
+    border-radius: 10px;
+}
+
+.o_field_monetary.o_field_number.o_field_widget.o_readonly_modifier.oe_subtotal_footer_separator {
+    margin-top: 0px;
+}
+
+.o_form_sheet {
+    border-radius: 10px;
+}
+
+.o_column_sortable {
+    text-align: center;
+}
+
+.o_list_view thead > tr > th.o_list_number_th {
+    text-align: center;
+}
+
+.o_data_cell.acu_product_id, .o_data_cell.name {
+    text-align: left;
+}
+
+.o_data_cell.acu_product_uom_qty, .o_data_cell.acu_price_unit, .o_data_cell.acu_net_price_unit, .o_data_cell.acu_price_subtotal {
+    text-align: right;
+}
+
+.o_data_row .o_data_cell.o_list_number.acu_product_uom_qty, 
+.o_data_row .o_data_cell.o_list_number.product_uom_qty, 
+.o_data_row .o_data_cell.o_list_number.acu_price_unit, 
+.o_data_row .o_data_cell.o_list_number.price_unit, 
+.o_data_row .o_data_cell.o_list_number.acu_net_price_unit, 
+.o_data_row .o_data_cell.o_list_number.price_subtotal, 
+.o_data_row .o_data_cell.o_list_number.acu_price_subtotal {
+    text-align: right !important;
+}
+
+.o_data_cell.acu_product_uom,
+.o_data_cell.o_list_number.acu_discount,
+.o_data_cell.acu_tax_id,
+.o_data_cell.tax_id,
+.o_data_cell.acu_include_cost {
+    text-align: center !important;
+}
+
+.img.img-fluid.img-thumbnail.ml16.btn-info {
+    border-radius: 20px !important;
+    background-color: $wr-gradient;
+    border-color: $wr-gradient;
+}
