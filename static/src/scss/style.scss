@@ -3,13 +3,13 @@
     src: url(/le_backend_theme/static/src/font/Roboto-Regular.ttf)
 }
 
-$wr-primary:        #0B2E59;
-$wr-primary-dark:   #3F71AB;
-$wr-secondary:      #FEBA00;
-$wr-secondary-dark: rgb(207, 157, 17);
-$wr-gradient:       #3F71AB;
-$wr-gradient-muted: #6999d1;
-$wr-gradient-dark:  #305886;
+// $wr-primary:        #0B2E59;
+// $wr-primary-dark:   #3F71AB;
+// $wr-secondary:      #FEBA00;
+// $wr-secondary-dark: rgb(207, 157, 17);
+// $wr-gradient:       #3F71AB;
+// $wr-gradient-muted: #6999d1;
+// $wr-gradient-dark:  #305886;
 
 body {
     font-family: "Roboto";
@@ -38,7 +38,7 @@ body {
 }
 
 .o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
-    background-color: $wr-gradient;
+    background-color: $wr-secondary;
 }
 
 .o_main_navbar .show .dropdown-toggle {
@@ -84,19 +84,20 @@ body {
 .btn-primary {
     background: $wr-gradient;
     border-color: $wr-gradient-dark;
-    border-radius: 100px;
+    border-radius: 5px;
 }
 
 .btn-secondary {
-    border-radius: 100px;
+    border-radius: 5px;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(195, 55, 100, 0.5);
+    box-shadow: 0 0 0 0.2rem $wr-gradient-dark;
 }
 
 .btn-primary:hover:focus, .btn-primary.focus:hover {
-    box-shadow: 0 0 0 0.2rem rgba(254, 186, 0, 0.5);
+    box-shadow: 0 0 0 0.2rem $wr-secondary-dark;
+    // box-shadow: 0 0 0 0.2rem color.scale($wr-secondary, $lightness: 20%);
 }
 
 .dropdown-item.active.o_app, .dropdown-item:active.o_app {
@@ -107,10 +108,14 @@ body {
     color: $wr-secondary;
 }
 
+.o_menu_apps .dropdown-menu {
+    transition: none;
+}
+
 .o_menu_apps .dropdown-menu.show {
     background: linear-gradient(to bottom, $wr-primary, $wr-gradient);
     border-radius: 0;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: none;
     padding-bottom: 10px;
     border-bottom-right-radius: 10px;
     height: auto;
@@ -309,4 +314,44 @@ button[name="button_upgrade_cancel"] , button[name="button_install_cancel"] {
     border-radius: 20px !important;
     background-color: $wr-gradient;
     border-color: $wr-gradient;
+}
+
+.o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item > .badge {
+    background-color: $wr-gradient;
+}
+
+.o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item.o_active {
+    box-shadow: inset 3px 0 0 $wr-secondary;
+}
+
+.o_tooltip.bottom::before, .o_tooltip.active.bottom::before {
+    border-bottom-color: $wr-secondary;
+}
+
+.o_tooltip.top::before, .o_tooltip.active.top::before {
+    border-top-color: $wr-secondary;
+}
+
+.o_tooltip.right::before, .o_tooltip.active.right::before {
+    border-right-color: $wr-secondary;
+}
+
+.o_tooltip.left::before, .o_tooltip.active.left::before {
+    border-left-color: $wr-secondary;
+}
+
+.o_tooltip::after{
+    background: radial-gradient($wr-secondary-dark, $wr-secondary);
+}
+
+.o_tooltip{
+    border-color: $wr-secondary;
+}
+
+.o_tooltip.active {
+    border-radius: 5px;
+}
+
+.o_control_panel .o_cp_right > .o_cp_pager .o_pager_counter {
+    min-width: 52px;
 }

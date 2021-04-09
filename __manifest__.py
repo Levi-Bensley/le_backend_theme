@@ -7,12 +7,18 @@
 	'author': 'Levi Bensley',
 	'company': 'Walker Rubber',
 	'website': 'https://www.walker-rubber.co.uk',
-	'depends': ['web', 'web_responsive'],
+	'depends': ['web', 'mail', 'web_responsive'],
 	'data': [
-		'views/assets.xml',
+		"template/assets.xml",
+		"template/web.xml",
+		"views/res_users.xml",
+		"views/res_config_settings_view.xml",
+	],
+	'qweb': [
+		'static/src/xml/*.xml',
 	],
 	'images': [
-        'static/description/icon.png'
-    ],
+		'static/description/icon.png'
+	],
 	'installable': True,
 }

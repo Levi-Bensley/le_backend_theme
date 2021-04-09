@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="assets_theme_colors" name="Colors" inherit_id="web.assets_backend">
+		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" href="/le_backend_theme/static/src/scss/colors.scss"/>
+		</xpath>
+	</template>
+	<template id="assets_backend" name="Walker Rubber Theme" inherit_id="web.assets_backend">
+		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/css" href="/le_backend_theme/static/src/js/lib/simplebar.css" />
+			<link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/style.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/mixins.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/form_view.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/appbar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/le_backend_theme/static/src/scss/chatter.scss"/>
+			<!-- <link rel="stylesheet" href="/wr_backend_theme/static/src/scss/sidebar.scss"/> -->
+			<!-- <script type="application/javascript" src="/backend_theme_v12/static/src/js/sidebar.js"/> -->
+			<!-- <script type="application/javascript" src="/backend_theme_v12/static/src/js/sidebar-toggle.js"/> -->
+		</xpath>
+		<xpath expr="//script[last()]" position="after">
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/lib/simplebar.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/lib/scrollbar.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/menu.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/actions.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/appbar.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/keyboard.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/chatter.js" />
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/discuss.js" />
+		</xpath>
+		<!-- <xpath expr="//script[@src='/web/static/src/js/views/list/list_renderer.js']" position="after">
+			<script type="text/javascript" src="/le_backend_theme/static/src/js/list_renderer.js"/>
+		</xpath> -->
+	</template>
+</odoo>

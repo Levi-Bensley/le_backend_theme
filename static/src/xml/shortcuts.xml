@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<t t-extend="UserMenu.shortcuts">
+        <t t-jquery="tbody" t-operation="append">
+			<tr>
+			    <td align="left">Open the activities</td>
+			    <td>
+			        <span class="o_key">Alt</span> + <span class="o_key">t</span>
+			    </td>
+			    <td>
+			        <span class="o_key">Control</span> + <span class="o_key">Alt</span> + <span class="o_key">t</span>
+			    </td>
+			</tr>
+			<tr>
+			    <td align="left">Open the messages</td>
+			    <td>
+			        <span class="o_key">Alt</span> + <span class="o_key">m</span>
+			    </td>
+			    <td>
+			        <span class="o_key">Control</span> + <span class="o_key">Alt</span> + <span class="o_key">m</span>
+			    </td>
+			</tr>
+        </t>
+    </t>
+
+</templates>
